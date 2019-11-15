@@ -10,8 +10,9 @@ $(document).ready(function(){
     let earth = personValue.earthAge();
     let mercury = personValue.mercuryAge();
     let venus = personValue.venusAge();
+    let mars = personValue.marsAge();
     console.log(personValue);
-    $("#answer").show().text(earth + ", " + mercury + ", " + venus);
+    $("#answer").show().text(earth + ", " + mercury + ", " + venus + ", " + mars);
   });
   $("button#restart").click(function(){
     location.reload();

@@ -27,6 +27,14 @@ describe("prototype Venus", () => {
       expect(person.venusAge()).toEqual(7);
   });
 });
+
+describe("prototype Mars", () => {
+
+  test('should record Mars age', () => {
+      var person = new Person(12, 45);
+      expect(person.marsAge()).toEqual(22);
+  });
+});
   // test("Should be Equilateral", () => {
   //   var result = new MyTriangle(2,2,2);
   //   expect(result.checkType()).toEqual("You have an Equilateral triangle");

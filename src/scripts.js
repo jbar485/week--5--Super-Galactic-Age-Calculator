@@ -33,6 +33,12 @@ export class Person {
     return mars;
   }
 
+  jupiterAge() {
+    this.jupiter = this.age * 11.86;
+    const jupiter = Math.floor(this.jupiter);
+    return jupiter;
+  }
+
 
 
  //  checkType() {
