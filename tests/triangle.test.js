@@ -55,7 +55,7 @@ describe("prototype Life Expectancy", () => {
 describe("prototype Life Expectancy", () => {
 
   test('should record Life Expectancy', () => {
-      var person = new Person(2, 4);
-      expect(person.lifeExpectancy()).toEqual("2, 0, 2, 4, 24");
+      var person = new Person(1, 1);
+      expect(person.lifeExpectancy()).toEqual("Wow your Life expectancy is perfect, good luck moving forward");
   });
 });
