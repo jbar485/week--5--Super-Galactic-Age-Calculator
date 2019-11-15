@@ -9,12 +9,25 @@ export class Person {
     this.jupiter = 0
   }
 
-  checkType() {
-    const result = "";
-    if (this.age < this.life) {
-      result = "";
-    }
+  earthAge() {
+    this.earth = this.age;
+    const earth = this.earth;
+    return earth;  
+  }
 
-      return result;
- }
+ //  checkType() {
+ //    let result = "";
+ //    if (this.age === this.life) {
+ //      this.earth = this.age;
+ //      this.mercury = this.age * .24;
+ //      this.venus = this.age * .62;
+ //      this.mars = this.age * 1.88;
+ //      this.jupiter = this.age * 11.86;
+ //      result = "";
+ //    }else if () {
+ //
+ //    }
+ //
+ //      return result;
+ // }
 }
