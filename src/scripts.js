@@ -39,21 +39,4 @@ export class Person {
     return jupiter;
   }
 
-
-
- //  checkType() {
- //    let result = "";
- //    if (this.age === this.life) {
- //      this.earth = this.age;
- //      this.mercury = this.age * .24;
- //      this.venus = this.age * .62;
- //      this.mars = this.age * 1.88;
- //      this.jupiter = this.age * 11.86;
- //      result = "";
- //    }else if () {
- //
- //    }
- //
- //      return result;
- // }
 }

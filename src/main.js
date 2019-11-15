@@ -6,13 +6,14 @@ $(document).ready(function(){
     let age = parseInt($("input.first").val());
     let life = parseInt($("input.second").val());
     event.preventDefault();
-    let personValue = new Person(age, life);
-    let earth = personValue.earthAge();
-    let mercury = personValue.mercuryAge();
-    let venus = personValue.venusAge();
-    let mars = personValue.marsAge();
+    const personValue = new Person(age, life);
+    const earth = personValue.earthAge();
+    const mercury = personValue.mercuryAge();
+    const venus = personValue.venusAge();
+    const mars = personValue.marsAge();
+    const jupiter = personValue.jupiterAge();
     console.log(personValue);
-    $("#answer").show().text(earth + ", " + mercury + ", " + venus + ", " + mars);
+    $("#answer").show().text(earth + ", " + mercury + ", " + venus + ", " + mars + ", " + jupiter);
   });
   $("button#restart").click(function(){
     location.reload();
