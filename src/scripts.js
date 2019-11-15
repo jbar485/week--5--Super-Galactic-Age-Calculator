@@ -11,19 +11,19 @@ export class Person {
 
   earthAge() {
     this.earth = this.age;
-    const earth = this.earth;
+    const earth = Math.floor(this.earth);
     return earth;
   }
 
   mercuryAge() {
     this.mercury = this.age * .24;
-    const mercury = this.mercury;
+    const mercury = Math.floor(this.mercury);
     return mercury;
   }
 
   venusAge() {
     this.venus = this.age * .62;
-    const venus = this.venus;
+    const venus = Math.floor(this.venus);
     return venus;
   }
 

@@ -1,27 +1,30 @@
 import { Person } from './../src/scripts.js';
 
 describe("class Person", () => {
-
   test('should record two numbers from the user', () => {
       var person = new Person(12, 45);
       expect(person.age).toEqual(12);
       expect(person.life).toEqual(45);
   });
 });
-
 describe("prototype Earth", () => {
-
   test('should record earth age', () => {
       var person = new Person(12, 45);
       expect(person.earthAge()).toEqual(12);
   });
 });
-
 describe("prototype Mercury", () => {
-
   test('should record Mercury age', () => {
       var person = new Person(12, 45);
-      expect(person.mercuryAge()).toEqual(2.88);
+      expect(person.mercuryAge()).toEqual(2);
+  });
+});
+
+describe("prototype Venus", () => {
+
+  test('should record Venus age', () => {
+      var person = new Person(12, 45);
+      expect(person.venusAge()).toEqual(7);
   });
 });
   // test("Should be Equilateral", () => {
