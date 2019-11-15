@@ -48,7 +48,7 @@ describe("prototype Life Expectancy", () => {
 
   test('should record Life Expectancy', () => {
       var person = new Person(12, 6);
-      expect(person.lifeExpectancy()).toEqual("-6, -1, -3, -11, -71");
+      expect(person.lifeExpectancy()).toEqual("You have survived -6 years longer than you should have on earth, -1 years longer on Mercury, -3 years longer on Venus, -11 years longer on Mars and, -71 years longer on Jupiter");
   });
 });
 

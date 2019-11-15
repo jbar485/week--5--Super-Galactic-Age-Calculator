@@ -15,7 +15,7 @@ $(document).ready(function(){
     const final = personValue.lifeExpectancy();
     console.log(final);
     console.log(personValue);
-    $("#answer").show().text(earth + ", " + mercury + ", " + venus + ", " + mars + ", " + jupiter + ", " + final);
+    $("#answer").show().text("You are " + earth + " years old on Earth, " + mercury + " years old on Mercury, " + venus + " years old on Venus, " + mars + " years old on Mars and, " + jupiter + " years old on Jupiter. " + final);
   });
   $("button#restart").click(function(){
     location.reload();
