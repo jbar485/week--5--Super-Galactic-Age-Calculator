@@ -16,5 +16,5 @@ export class Person {
  //      result = "You have an scalene triangle";
  //    }
  //      return result;
- // }
+ }
 }
