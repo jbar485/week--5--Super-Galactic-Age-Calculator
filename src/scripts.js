@@ -27,6 +27,12 @@ export class Person {
     return venus;
   }
 
+  marsAge() {
+    this.mars = this.age * 1.88;
+    const mars = Math.floor(this.mars);
+    return mars;
+  }
+
 
 
  //  checkType() {
