@@ -1,37 +1,69 @@
-# _{Application Name}_
+# _Super Galactic Age Calculator_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _This application determines a user’s age based on a planet’s solar years, November 15, 2019_
 
 #### By _**Judah Barton**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This website takes a person’s age in years and returns their age in Mercury years, Venus years, Mars years, and Jupiter years. It determines how many years a you have left to live on each planet based on your average life expectancy. You determine the average life expectancy however you want. If you have already surpassed the average life expectancy, it will return the number of years you have lived past the life expectancy._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Click the clone or download button and copy the link_
+* _open your terminal and type "git clone (link)"_
+* _run: npm install in the terminal_
+* _run: npm run build. this will create distribution folder. It also creates the index.html file within the distribution folder. When making edits to the code, edit the index.html, and all other files within the SRC folder_
+* _run: npm run start to begin the live developer session_
+* _if making edits to the lint or any other configuration, you will need to run another build AND another start for them to apply_
+* _when npm run start is running, it will live update. If you input other commands in the terminal it will not do anything. Control C will stop the run so you can access the terminal again_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _This version includes Jest and Babel pre-loaded_
+* _To run a unit test, run: 'npm test' in command line_
 
+
+
+* _Spec: Returns user age in Earth years_
+  * _Input: 12_
+  * _Output: 12_
+* _Spec: Returns user age in Mercury years_
+  * _Input: 12_
+  * _Output: 12 * .24_
+* _Spec: Returns user age in Venus years_
+  * _Input: 12_
+  * _Output: 12 * .62_
+* _Spec: Returns user age in Mars years_
+  * _Input: 12_
+  * _Output: 12 * 1.88_
+* _Spec: Returns user age in Jupiter years_
+  * _Input: 12_
+  * _Output: 12 * 11.86_
+* _Spec: Returns how many years a user has left to live on Earth_
+  * _Input: Age - 12, Life Expectancy - 24_
+  * _Output: 24 - 12 = 12 years left to live_
+* _Spec: Returns how many years a user has left to live on Venus .etc_
+  * _Input: Age - 12, Life Expectancy - 24_
+  * _Output: (24 * .62) - (12 * .62) = 7.44 years left to live_
+* _Spec: If user has already surpassed life expectancy on Earth_
+  * _Input: Age - 24, Life Expectancy - 12_
+  * _Output: 24 - 12 = 12 years longer than expected_
+* _Spec: If user has already surpassed life expectancy on Venus .etc_
+  * _Input: Age - 24, Life Expectancy - 12_
+  * _Output: (24 * .62) - (12 * .62) = 7.44 years longer than expected_
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_None_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_example@example.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_HTML, JavaScript, JQuery, CSS, Node_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This software is licensed under the MIT license agreement*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2019 **_Judah Barton_**

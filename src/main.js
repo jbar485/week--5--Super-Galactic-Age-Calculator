@@ -7,6 +7,7 @@ $(document).ready(function(){
     let life = parseInt($("input.second").val());
     event.preventDefault();
     let personValue = new Person(age, life);
+    console.log(personValue);
     let finalPerson = personValue.checkType();
     $("#answer").show().text(finalPerson);
   });
