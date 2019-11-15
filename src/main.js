@@ -7,9 +7,9 @@ $(document).ready(function(){
     let life = parseInt($("input.second").val());
     event.preventDefault();
     let personValue = new Person(age, life);
+    let earth = personValue.earthAge();
     console.log(personValue);
-    let finalPerson = personValue.checkType();
-    $("#answer").show().text(finalPerson);
+    $("#answer").show().text(earth);
   });
   $("button#restart").click(function(){
     location.reload();

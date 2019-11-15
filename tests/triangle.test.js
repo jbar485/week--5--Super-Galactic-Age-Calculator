@@ -8,6 +8,14 @@ describe("class Person", () => {
       expect(person.life).toEqual(45);
   });
 });
+
+describe("prototype Earth", () => {
+
+  test('should record earth age', () => {
+      var person = new Person(12, 45);
+      expect(person.earthAge()).toEqual(12);
+  });
+});
   // test("Should be Equilateral", () => {
   //   var result = new MyTriangle(2,2,2);
   //   expect(result.checkType()).toEqual("You have an Equilateral triangle");
