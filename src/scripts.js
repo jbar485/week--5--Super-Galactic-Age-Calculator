@@ -12,8 +12,16 @@ export class Person {
   earthAge() {
     this.earth = this.age;
     const earth = this.earth;
-    return earth;  
+    return earth;
   }
+
+  mercuryAge() {
+    this.mercury = this.age * .24;
+    const mercury = this.mercury;
+    return mercury;
+  }
+
+
 
  //  checkType() {
  //    let result = "";
