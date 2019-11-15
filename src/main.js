@@ -8,8 +8,9 @@ $(document).ready(function(){
     event.preventDefault();
     let personValue = new Person(age, life);
     let earth = personValue.earthAge();
+    let mercury = personValue.mercuryAge();
     console.log(personValue);
-    $("#answer").show().text(earth);
+    $("#answer").show().text(earth + ", " + mercury);
   });
   $("button#restart").click(function(){
     location.reload();

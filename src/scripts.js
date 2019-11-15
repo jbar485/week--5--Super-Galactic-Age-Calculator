@@ -21,6 +21,12 @@ export class Person {
     return mercury;
   }
 
+  venusAge() {
+    this.venus = this.age * .62;
+    const venus = this.venus;
+    return venus;
+  }
+
 
 
  //  checkType() {
