@@ -43,3 +43,19 @@ describe("prototype Jupiter", () => {
       expect(person.jupiterAge()).toEqual(142);
   });
 });
+
+describe("prototype Life Expectancy", () => {
+
+  test('should record Life Expectancy', () => {
+      var person = new Person(12, 6);
+      expect(person.lifeExpectancy()).toEqual("-6, -1, -3, -11, -71");
+  });
+});
+
+describe("prototype Life Expectancy", () => {
+
+  test('should record Life Expectancy', () => {
+      var person = new Person(2, 4);
+      expect(person.lifeExpectancy()).toEqual("2, 0, 2, 4, 24");
+  });
+});

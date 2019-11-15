@@ -21,26 +21,26 @@ export class Person {
   }
 
   mercuryAge() {
-    this.mercury = this.age * .24;
-    const mercury = Math.floor(this.mercury);
+    this.mercury = Math.floor(this.age * .24);
+    const mercury = this.mercury;
     return mercury;
   }
 
   venusAge() {
-    this.venus = this.age * .62;
-    const venus = Math.floor(this.venus);
+    this.venus = Math.floor(this.age * .62);
+    const venus = this.venus;
     return venus;
   }
 
   marsAge() {
-    this.mars = this.age * 1.88;
-    const mars = Math.floor(this.mars);
+    this.mars = Math.floor(this.age * 1.88);
+    const mars = this.mars;
     return mars;
   }
 
   jupiterAge() {
-    this.jupiter = this.age * 11.86;
-    const jupiter = Math.floor(this.jupiter);
+    this.jupiter = Math.floor(this.age * 11.86);
+    const jupiter = this.jupiter;
     return jupiter;
   }
 
@@ -49,18 +49,19 @@ export class Person {
     if (this.age === this.life) {
       lifeString = "Wow your Life expectancy is perfect, good luck moving forward"
     }else if (this.age > this.life) {
-      this.earthLife = 0,
-      this.mercuryLife = 0,
-      this.venusLife = 0,
-      this.marsLife = 0,
-      this.jupiterLife = 0
-      lifeString
+      this.earthLife = this.earth - this.life;
+      this.mercuryLife = this.mercury - Math.floor(this.life * .24);
+      this.venusLife = this.venus - Math.floor(this.life * .62);
+      this.marsLife = this.mars - Math.floor(this.life * 1.88);
+      this.jupiterLife = this.jupiter - Math.floor(this.life * 11.86);
+      lifeString = (this.earthLife + ", " + this.mercuryLife + ", " + this.venusLife + ", " + this.marsLife + ", " + this.jupiterLife)
     }else if (this.age < this.life) {
       this.earthLife = this.life - this.earth;
-      this.mercuryLife = this.life - this.mercury;
-      this.venusLife = this.life - this.life;
-      this.marsLife = this.life - this.mars;
-      this.jupiterLife = this.life - this.jupiter;
+      this.mercuryLife = Math.floor(this.life * .24) - this.mercury;
+      this.venusLife = this.life - Math.floor(this.life * .62);
+      this.marsLife = Math.floor(this.life * 1.88) - this.mars;
+      this.jupiterLife = Math.floor(this.life * 11.86) - this.jupiter;
+      lifeString = (this.earthLife + ", " + this.mercuryLife + ", " + this.venusLife + ", " + this.marsLife + ", " + this.jupiterLife)
     }
     return lifeString
   }
