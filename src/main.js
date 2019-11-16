@@ -13,8 +13,6 @@ $(document).ready(function(){
     const mars = personValue.marsAge();
     const jupiter = personValue.jupiterAge();
     const final = personValue.lifeExpectancy();
-    console.log(final);
-    console.log(personValue);
     $("#answer").show().text("You are " + earth + " years old on Earth, " + mercury + " years old on Mercury, " + venus + " years old on Venus, " + mars + " years old on Mars and, " + jupiter + " years old on Jupiter. " + final);
   });
   $("button#restart").click(function(){
