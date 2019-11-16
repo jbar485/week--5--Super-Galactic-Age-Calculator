@@ -45,7 +45,7 @@ _This website takes a person’s age in years and returns their age in Mercury y
   * _Input: Age - 12, Life Expectancy - 24_
   * _Output: (24 * .62) - (12 * .62) = 7.44 years left to live_
 * _Spec: If user has already surpassed life expectancy on Earth_
-  * _Input: Age - 24, Life Expectancy - 12_
+  * _Input: Age - 12, Life Expectancy - 24_
   * _Output: 24 - 12 = 12 years longer than expected_
 * _Spec: If user has already surpassed life expectancy on Venus .etc_
   * _Input: Age - 24, Life Expectancy - 12_
