@@ -49,18 +49,18 @@ export class Person {
     if (this.age === this.life) {
       lifeString = "Wow your Life expectancy is perfect, good luck moving forward";
     }else if (this.age > this.life) {
-      this.earthLife = this.earth - this.life;
-      this.mercuryLife = this.mercury - Math.floor(this.life * .24);
-      this.venusLife = this.venus - Math.floor(this.life * .62);
-      this.marsLife = this.mars - Math.floor(this.life * 1.88);
-      this.jupiterLife = this.jupiter - Math.floor(this.life * 11.86);
+      this.earthLife = this.age - this.life;
+      this.mercuryLife = Math.floor(this.age * .24) - Math.floor(this.life * .24);
+      this.venusLife = Math.floor(this.age * .62) - Math.floor(this.life * .62);
+      this.marsLife = Math.floor(this.age * 1.88) - Math.floor(this.life * 1.88);
+      this.jupiterLife = Math.floor(this.age * 11.86) - Math.floor(this.life * 11.86);
       lifeString = ("You have survived " + this.earthLife + " years longer than you should have on earth, " + this.mercuryLife + " years longer on Mercury, " + this.venusLife + " years longer on Venus, " + this.marsLife + " years longer on Mars and, " + this.jupiterLife + " years longer on Jupiter");
     }else if (this.age < this.life) {
-      this.earthLife = this.life - this.earth;
-      this.mercuryLife = Math.floor(this.life * .24) - this.mercury;
-      this.venusLife = this.life - Math.floor(this.life * .62);
-      this.marsLife = Math.floor(this.life * 1.88) - this.mars;
-      this.jupiterLife = Math.floor(this.life * 11.86) - this.jupiter;
+      this.earthLife = this.life - this.age;
+      this.mercuryLife = Math.floor(this.life * .24) - Math.floor(this.age * .24);
+      this.venusLife = Math.floor(this.life * .62) - Math.floor(this.age * .62);
+      this.marsLife = Math.floor(this.life * 1.88) - Math.floor(this.age * 1.88);
+      this.jupiterLife = Math.floor(this.life * 11.86) - Math.floor(this.age * 11.86);
       lifeString = ("You have " + this.earthLife + " years on earth before you should die, " + this.mercuryLife + " years on Mercury, " + this.venusLife + " years on Venus, " + this.marsLife + " years on Mars and, " + this.jupiterLife + " years left on Jupiter");
     }else {
       lifeString = "You need to enter a life Expectancy in order for me to have this knowledge";

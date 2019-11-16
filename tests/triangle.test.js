@@ -47,8 +47,8 @@ describe("prototype Jupiter", () => {
 describe("prototype Life Expectancy", () => {
 
   test('should record Life Expectancy', () => {
-      var person = new Person(12, 6);
-      expect(person.lifeExpectancy()).toEqual("You have survived -6 years longer than you should have on earth, -1 years longer on Mercury, -3 years longer on Venus, -11 years longer on Mars and, -71 years longer on Jupiter");
+      var person = new Person(10, 5);
+      expect(person.lifeExpectancy()).toEqual("You have survived 5 years longer than you should have on earth, 1 years longer on Mercury, 3 years longer on Venus, 9 years longer on Mars and, 59 years longer on Jupiter");
   });
 });
 
@@ -57,5 +57,13 @@ describe("prototype Life Expectancy", () => {
   test('should record Life Expectancy', () => {
       var person = new Person(1, 1);
       expect(person.lifeExpectancy()).toEqual("Wow your Life expectancy is perfect, good luck moving forward");
+  });
+});
+
+describe("prototype Life Expectancy 2", () => {
+
+  test('should record Life Expectancy 2', () => {
+      var person = new Person(5, 10);
+      expect(person.lifeExpectancy()).toEqual("You have 5 years on earth before you should die, 1 years on Mercury, 3 years on Venus, 9 years on Mars and, 59 years left on Jupiter");
   });
 });
